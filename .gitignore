@@ -1,0 +1,13 @@
+# ignore Mac folder files
+.DS_Store
+
+# ignore all study data and log files that don't start with "e" (which allows
+# for the "empty-placeholder.txt" files
+commfeat/logs/[!e]*
+commfeat/sessions/[!e]*
+
+# ignore the counterbalancer files
+*/counterbalancer.txt
+
+# ignore any internal documents
+internal*
