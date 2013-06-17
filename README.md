@@ -3,6 +3,10 @@ ORT
 
 Run an Object Representation & Tracking (ORT) study in Matlab with minimal configuration. This is useful for developmental psychologists who want to examine infants' visual short term memory for objects and features.
 
+Infants are familiarized to two objects hidden behind two occluders. After 5 familiarization trials, they receive 4 test trials: Baseline (BL), Surface Feature (SF), Spatiotemporal (ST), and Feature Binding (FB). These are adapted from Mareschel & Johnson (2003). In each test trial, the occluders are lifted to reveal two objects.
+
+The sessions can be coded online using the keyboard, and all stimuli, timing options, and orders are easily configurable.
+
 ## How to use ORT
 
 ### Download ORT
@@ -14,7 +18,7 @@ Run an Object Representation & Tracking (ORT) study in Matlab with minimal confi
 ### Create a new study
 
 * Copy the example study folder, "commfeat", into a subfolder of your main ORT directory
-* Modify `config.txt` with the configuration options for the new study
+* Modify `config.txt` with the configuration options for the new study using Excel. Save as a tab-delimited text file.
 * Modify the stimuli in the `stimuli` sub-folder.
 
 ### Run a session
@@ -23,7 +27,7 @@ Run an Object Representation & Tracking (ORT) study in Matlab with minimal confi
 * Type `ort` in the command prompt
 * Select your new study folder and click "Open"
 * Follow on-screen prompts (e.g., enter the experimenter's name, infant's subject code, age, etc.)
-* Code the infant's looking using the LeftArrow (for a right look), RightArrow (for a left look), and DownArrow (for a center look)
+* Code the infant's looking using the LeftArrow (for a right look), RightArrow (for a left look), and DownArrow (for a center look). Press the corresponding key when the infant is looking in that direction on the screen, and release the key when the baby stops looking.
 * A log for the session will be created in the `logs` sub-folder
 * A session file (with looking time results, participant details, and session metadata) will be created in the `sessions` sub-folder
 
